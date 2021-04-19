@@ -1,0 +1,36 @@
+{
+    "name": "sorry10/annotation",
+    "description": "laravel annotation",
+    "keywords": ["laravel", "annotation"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "sorry510",
+            "email": "491559675@qq.com"
+        }
+    ],
+    "require": {
+        "php": "^7.3",
+        "ext-json": "*",
+        "laravel/framework": "^8.0",
+        "doctrine/annotations": "^1.12",
+        "php-di/phpdoc-reader": "^2.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Sorry510\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Sorry510\\AnnotationServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
