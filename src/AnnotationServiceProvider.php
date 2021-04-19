@@ -16,8 +16,8 @@ class AnnotationServiceProvider extends ServiceProvider implements DeferrablePro
     {
         $this->addMiddlewareAlias('annotation', Sorry510\Annotations\Middleware\Annotation::class); // 在 $routeMiddleware 中添加别名
         $this->publishes([
-            __DIR__ . '/../config/annotation.php' => config_path('annotation.php'),
-        ]);
+            __DIR__ . '/Annotations/config/annotation.php' => config_path('annotation.php'),
+        ], 'annotation');
     }
 
     protected function addMiddlewareAlias($name, $class)
