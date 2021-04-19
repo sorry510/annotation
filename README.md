@@ -16,7 +16,13 @@ composer require sorry510/annotation
 
 #### 使用前提
 
-- 首先在对应的 `Controller` 文件中添加对应的注解的`命名空间`
+- 生成配置文件
+
+```
+php artisan vendor:publish --tag=annotation
+```
+
+- 在对应的 `Controller` 文件中添加对应的注解的`命名空间`
 
 ```
 namespace App\Controller;
@@ -26,6 +32,7 @@ use Sorry510\Annotations\RequestParam;
 use Sorry510\Annotations\Transaction;
 use Sorry510\Annotations\Inject;
 ```
+
 - 在 `app\Http\Kernel.php` 添加 `annotation` 中间件
 
 ```
