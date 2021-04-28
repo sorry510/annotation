@@ -40,6 +40,6 @@ class ValidateException extends RuntimeException
             "message" => $this->getMessage(),
             "data" => null,
             "timestamp" => ceil(microtime(true) * 1000), // 毫秒
-        ], $this->getStatusCode(), [], JSON_UNESCAPED_UNICODE);
+        ], 200, [], JSON_UNESCAPED_UNICODE);
     }
 }
