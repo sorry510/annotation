@@ -10,9 +10,8 @@
         }
     ],
     "require": {
-        "php": "^7.3",
+        "php": ">=7.0.0",
         "ext-json": "*",
-        "laravel/framework": "^8.0",
         "doctrine/annotations": "^1.12",
         "php-di/phpdoc-reader": "^2.2"
     },
